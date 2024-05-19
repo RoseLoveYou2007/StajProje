@@ -1,0 +1,22 @@
+#menu
+{
+    background-color:#002c73;
+    width: 100%;
+    height: 30px;
+    opacity: 0.7;
+    position: sticky;
+    z-index: 1;
+}
+#ana{
+    background-color: black;
+    margin-top: 70px;
+    opacity: 0.8;
+    font-size: 35px;
+    width: 100%;
+    height: 100%;
+    color: green;
+}
+#ana p{
+    color: green;
+    font-size: 30px;
+}

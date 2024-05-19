@@ -1,0 +1,71 @@
+#menu{
+    width: 100%;
+    height: 10px;
+    z-index: 3;
+    /*position: fixed; bunu denemek kötü fikirdi*/
+}
+#img1 {
+    height: 70px;
+    width: 120px;
+    z-index: 3;
+}
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+}
+#menu ul li{
+    align-items: center;
+    display: inline-block;
+    z-index: 3;
+}
+#menu ul li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    z-index: 3;
+    font-family: Times;
+}
+#menu ul li a:hover{
+    /*Hareket ettir veya ileri yürüt*/
+    z-index: 3;
+}
+#menu ul li ul{
+    display: none;
+    background-color: #42cef5;
+    position: absolute;
+    width: 100px;
+    z-index: 3;
+}
+#menu ul li ul #table1{
+    display: none;
+    background-color: #42cef5;
+    position: absolute;
+    width: 200px;
+    z-index: 3;
+}
+#menu ul li:hover ul{
+    display: block;
+    z-index: 3;
+}
+#menu ul li ul li{
+    display: block;
+    z-index: 3;
+}
+#table1 tr td{
+    margin-top: 5px;
+    margin-right: 10px;
+    z-index: 3;
+    background-color: cyan;
+}
+#menu ul li #table1 tr td{
+    margin-right: 30px;
+    z-index: 3;
+}
+#menu ul li ul br{
+    background-color:black;
+    z-index: 3;
+}

@@ -1,0 +1,28 @@
+body{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+table { 
+    border: 2px solid black; 
+    margin-left: auto; 
+    margin-right: auto; 
+} 
+
+input[type="button"] { 
+    width: 100%; 
+    padding: 40px 80px; 
+    background-color: green; 
+    color: white; 
+    font-size: 24px; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 10px; 
+} 
+
+input[type="text"] { 
+    padding: 40px 60px; 
+    font-size: 48px; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 10px; 
+    border: 2px solid black; 
+} 

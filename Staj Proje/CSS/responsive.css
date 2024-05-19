@@ -1,0 +1,192 @@
+@media (max-device-width: 600px){
+    .ikinciParca{
+        height: 100%;
+        width: 100%;
+    }
+    .ikinciParca #img3{
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 90%;
+        height: 90%;
+    }
+    .ikinciParca .ikiIcParca{
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        align-content: center;
+    }
+    .ikinciParca .ikiIcParca h1,span{
+        text-align: center;
+    }
+    .ikinciParca .ikiIcParca p{
+        text-align: center;
+    }
+    .ikinciParca .ikiIcParca input{
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}
+/* IKINCI KISIM RESPONSIVE BITIM*/
+@media (max-device-width: 600px){
+    .ucuncuKisim{
+        height: 100%;
+    }
+    .ucuncuKisim .uKButton #ucuncuButton{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        align-self: center;
+    }
+}
+/*UCUNCU KISIM RESPONSIVE BITIM*/
+@media (max-device-width: 600px){
+    .dorduncuKisim{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+    .dorduncuKisim .ayrim21{
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
+    }
+    .dorduncuKisim .icDA{
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        table-layout: fixed;
+        height: 100%;
+        width: 100% ;
+    }
+    .dorduncuKisim #img4{
+        display: none;
+    }
+}
+/*DORDUNCU KISIM RESPONSIVE BITIM*/
+@media (max-device-width: 600px){
+    .besinciKisim{
+        width: 100%;
+        height: 100%;
+    }
+    .besinciKisim .baslik5{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .besinciKisim .bAyrim{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+/*BESINCI KISIM RESPONSIVE BITIM*/
+@media (max-device-width: 600px){
+    .altinciKisim{
+        margin-top: 0px;
+        width: 100%;
+        height: 100%;
+    }
+    .altinciKisim .altKYuzey{
+        width: 100%;
+        height: 100%;
+    }
+    .altinciKisim .altKKatman1{
+        padding: 1px;
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 20px;
+        width: 30%;
+        height: 10%;
+    }
+    .altinciKisim .altKKatman2{
+        padding: 1px;
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 20px;
+        width: 30%;
+        height: 10%;
+    }
+    .altinciKisim .altKYuzey .slider{
+        width: 100%;
+        height: 100%;
+    }
+}
+/*ALTI KISIM RESPONSIVE BITIM*/
+@media (max-device-width: 600px){
+    .yedinciKisim{
+        margin-top: 0px;
+        width: 100%;
+        height: 100%;
+    }
+    .yedinciKisim .ayrim{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+/*Yedinci Kisim Bitim*/
+@media (max-device-width: 600px){
+    .sekizinciKisim{
+        margin-top: 0px;
+        width: 100%;
+        height: 100%;
+    }
+}
+/*Sekizinci Kisim Bitim*/
+@media (max-device-width: 600px){
+    .dokuzuncuKisim{
+        margin-top: 0px;
+        float: left;
+    }
+    .dokuzuncuKisim .ayrim{
+        width: 100%;
+        height: 30%;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 5px;
+        float: left;
+    }
+    .dokuzuncuKisim .ayrim p a{
+        font-size: 20px;
+    }
+    .dokuzuncuKisim .dik{
+        display: none;
+    }
+}
+/*Dokuzuncu Kism bitm*/
+@media (max-device-width: 600px){
+    .onuncuKisim{
+        height: 100%;
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+/*Onuncu kisim bitim*/
+@media (max-device-width: 600px){
+    #chatBox{
+        display: none;
+    }
+}
+@media (max-device-width: 600px){
+
+}
+/*Live SP bitim*/
+@media screen and (max-device-width: 400px) {
+    .onuncuKisim iframe{
+        width: 100%;
+        height: 300px;
+        
+    }
+}
+/*slider 3 responsive*/
+@media screen and (max-divice-width: 500px){
+    .wrapper1{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .carousel1 img{
+        width: 20%
+    }
+}
+

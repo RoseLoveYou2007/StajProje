@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUB TR WIKI</title>
+    <link rel="stylesheet" href="group_css/calculator.css">
+    <link rel="stylesheet" href="group_css/menu.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!---->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+        integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+    </script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+        integrity="sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+    </script> 
+    <!---->
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="oyunhakkinda.html">Oyun Hakkında</a></li>
+            <li><a href="#">Oyun Için Modlar</a>
+                <ul>
+                    <li><a href="void.html">Into The Void</a></li>
+                    <li><a href="ancient.html">Return Of The Ancients</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Oyunların Hikayesi</a>
+                <ul>
+                    <li><a href="" onclick="alert('Üzgünüm... Bunu yapacak kadar tembelim... Bu kadar uzun hikayeyi yazarsam okunur mu ki?');">SUB NAUTICA</a></li>
+                    <li><a href="" onclick="alert('Üzgünüm... Bunu yapacak kadar tembelim... Bu kadar uzun hikayeyi yazarsam okunur mu ki?');">SUB NAUTICA: BELOW ZERO</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Oyundaki Canlılar</a>
+                <ul>
+                    <li><a href="submob.html">SUB NAUTICA</a></li>
+                    <li><a href="subbzmob.html">SUB NAUTICA: BELOW ZERO</a></li>
+                </ul>
+            </li>
+            <li><a href="iletisim.html">Iletişim</a></li>
+            <li><a href="calculator.html" onclick="alert('Üzgünüm.. Bunu eklemek zorundayım, oyunda işinize pek yaramayacak..');">Hesaplama</a></li>
+            <li><a href="Vtuber Wiki (ilk sitem)/Vtuber_Wiki.html">VTube Wiki</a></li>
+        </ul>
+    </div>
+    <!-- Hesap Makinesi Tasarımı -->
+    <table id="calcu"> 
+        <tr> 
+            <td colspan="3"><input type="text" id="result"></td> 
+            <td><input type="button" value="c" onclick="clr()" /> </td> 
+        </tr> 
+        <tr> 
+            <td><input type="button" value="1" onclick="dis('1')"
+                        onkeydown="myFunction(event)"> </td> 
+            <td><input type="button" value="2" onclick="dis('2')"
+                        onkeydown="myFunction(event)"> </td> 
+            <td><input type="button" value="3" onclick="dis('3')"
+                        onkeydown="myFunction(event)"> </td> 
+            <td><input type="button" value="/" onclick="dis('/')"
+                        onkeydown="myFunction(event)"> </td> 
+        </tr> 
+        <tr> 
+            <td><input type="button" value="4" onclick="dis('4')"
+                        onkeydown="myFunction(event)"> </td> 
+            <td><input type="button" value="5" onclick="dis('5')"
+                        onkeydown="myFunction(event)"> </td> 
+            <td><input type="button" value="6" onclick="dis('6')"
+                        onkeydown="myFunction(event)"> </td> 
+            <td><input type="button" value="*" onclick="dis('*')"
+                        onkeydown="myFunction(event)"> </td> 
+        </tr> 
+        <tr> 
+            <td><input type="button" value="7" onclick="dis('7')"
+                        onkeydown="myFunction(event)"> </td> 
+            <td><input type="button" value="8" onclick="dis('8')"
+                        onkeydown="myFunction(event)"> </td> 
+            <td><input type="button" value="9" onclick="dis('9')"
+                        onkeydown="myFunction(event)"> </td> 
+            <td><input type="button" value="-" onclick="dis('-')"
+                        onkeydown="myFunction(event)"> </td> 
+        </tr> 
+        <tr> 
+            <td><input type="button" value="0" onclick="dis('0')"
+                        onkeydown="myFunction(event)"> </td> 
+            <td><input type="button" value="." onclick="dis('.')"
+                        onkeydown="myFunction(event)"> </td> 
+            
+            <!-- Çözme Fonksiyonunun Değerlerini Çağırma -->
+            <td><input type="button" value="=" onclick="solve()"> </td> 
+  
+            <td><input type="button" value="+" onclick="dis('+')"
+                        onkeydown="myFunction(event)"> </td> 
+        </tr> 
+    </table> 
+  
+    <script> 
+        
+        //Sonuçlanan Değeri 
+        function dis(val) { 
+            document.getElementById("result").value += val 
+        } 
+  
+        function myFunction(event) { 
+            if (event.key == '0' || event.key == '1' 
+                || event.key == '2' || event.key == '3' 
+                || event.key == '4' || event.key == '5' 
+                || event.key == '6' || event.key == '7' 
+                || event.key == '8' || event.key == '9' 
+                || event.key == '+' || event.key == '-' 
+                || event.key == '*' || event.key == '/') 
+                document.getElementById("result").value += event.key; 
+        } 
+  
+        var cal = document.getElementById("calcu"); 
+        cal.onkeyup = function (event) { 
+            if (event.keyCode === 13) { 
+                console.log("Enter"); 
+                let x = document.getElementById("result").value 
+                console.log(x); 
+                solve(); 
+            } 
+        } 
+  
+        //Sonucu geri döndürme
+        function solve() { 
+            let x = document.getElementById("result").value 
+            let y = math.evaluate(x) 
+            document.getElementById("result").value = y 
+        } 
+  
+        //Sonucu Sıfırlama 
+        function clr() { 
+            document.getElementById("result").value = "" 
+        }
+        $(document).on("click","nonclink",function(){
+                alert("Üzgünüm... Bunu yapacak kadar tembelim... Bu kadar uzun hikayeyi yazarsam okunur mu ki?");
+            });
+        $(document).on("click","trollclink",function(){
+            alert("Bu gereksiz şeye ihtiyacınız pek olmayacak ama burada ihtiyacımız var *şaka*");
+        });
+    </script> 
+</body>
+</html>

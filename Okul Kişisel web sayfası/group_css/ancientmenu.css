@@ -1,0 +1,40 @@
+#menu ul{
+    list-style: none;
+    margin:0;padding:0;
+    background-color: black;
+}
+#menu ul li{
+    /*li elemanlarını yanyana görüntüler*/
+    display:inline-block;
+}
+#menu ul li a{
+    display:block;
+    color:#20fa07;
+    text-align: center;
+    padding:14px 16px;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+#menu ul li a:hover{
+    background-color: #109e00;
+}
+#menu ul li ul{
+    display:none;
+    background-color: black;
+    position:absolute;
+    width:100px;
+}
+#menu ul li:hover ul{
+    display:block;
+}
+#menu ul li ul li{
+    display:block;
+}
+#ana p a:hover{
+    color: #20fa07;
+}
+#ana p a{
+    color: #045c04;
+    text-decoration: none;
+}

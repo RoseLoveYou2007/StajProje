@@ -1,0 +1,1 @@
+// Burası hiç kullanılmadı. Çünkü burayı hiç bir şekilde doğru güzgün algılanmadı.

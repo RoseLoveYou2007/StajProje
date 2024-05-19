@@ -1,0 +1,23 @@
+.wrapper1{
+    max-width: 100%;
+}
+.wrapper1 .carousel1{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.carousel1 .dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel1 .dragging img{
+    pointer-events: none;
+}
+.carousel1 img{
+    height: 300px;
+    object-fit: cover;    
+}
+.carousel1 img:first-child{
+    margin-left: 0px;
+}
