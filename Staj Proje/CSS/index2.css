@@ -1,0 +1,68 @@
+.ayrim3R{
+    object-fit: cover;
+    width: 100%;
+    height: 13.3%;
+}
+.mlogo{
+    bottom: 0px;
+    float: left;
+}
+.mLogof1{
+    width: 6%;
+    padding-left: 8px;
+    padding-right: 2px;
+    padding-top: 2px;
+    height: 20px;
+    position: absolute;
+    opacity: 0;
+    background-color: orange;
+    color: white;
+    transition: 0.5s;
+    float: right;
+}
+.mLogof2{
+    width: 6%;
+    padding-left: 8px;
+    padding-right: 2px;
+    padding-top: 2px;
+    height: 20px;
+    position: absolute;
+    opacity: 0;
+    background-color: orange;
+    color: white;
+    transition: 0.5s;
+    float: left;
+    margin-left: 45px;
+}
+.mLogof3{
+    width: 9%;
+    padding-left: 8px;
+    padding-right: 2px;
+    padding-top: 2px;
+    height: 20px;
+    position: absolute;
+    opacity: 0;
+    background-color: orange;
+    color: white;
+    transition: 0.5s;
+    float: left;
+    margin-left: 70px;
+}
+/*.mLogof1:hover{
+    opacity: 1;
+}
+.mLogof2:hover{
+    opacity: 1;
+}
+.mLogof3:hover{
+    opacity: 1;
+}*/
+.mLogo1:hover ~ .mLogof1{
+    opacity: 1;
+}
+.mLogo2:hover ~ .mLogof2{
+    opacity: 1;
+}
+.mLogo3:hover ~ .mLogof3{
+    opacity: 1;
+}

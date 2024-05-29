@@ -16,8 +16,21 @@
 }
 .carousel1 img{
     height: 300px;
-    object-fit: cover;    
+    object-fit: cover;
 }
 .carousel1 img:first-child{
     margin-left: 0px;
+    object-fit: cover;
 }
+.carousel1 img:hover{
+    background-color: black;
+    opacity: 0.3;
+    transition: 0.3s;
+}
+/*.carousel1 .imgsFrame{
+    float: left;
+    margin: 0px, 0px, 0px, 0px;
+}
+.carousel1 .imgsFrame .zoom{
+    display: none;
+}*/

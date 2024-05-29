@@ -1,51 +1,71 @@
 #menu{
     width: 100%;
-    height: 10px;
+    height: 40px;
     z-index: 3;
     /*position: fixed; bunu denemek kötü fikirdi*/
 }
 #img1 {
     height: 70px;
-    width: 120px;
+    width: 199px;
     z-index: 3;
+    margin-right: 310px;
 }
 #menu ul{
     list-style: none;
     margin: 0;
     padding: 0;
     z-index: 3;
+    float: right;
 }
 #menu ul li{
     align-items: center;
     display: inline-block;
     z-index: 3;
 }
-#menu ul li a{
+
+#menu ul li .aBaslik{
     display: block;
     color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     z-index: 3;
-    font-family: Times;
+    font-family: Arial;
 }
-#menu ul li a:hover{
-    /*Hareket ettir veya ileri yürüt*/
+#menu ul li .altsecim{
+    display: block;
+    color: rgba(243, 243, 243, 0.911);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
     z-index: 3;
+    font-family: Arial;
+}
+#menu ul li .aBaslik:hover{
+    transition: 0.2s;
+    z-index: 3;
+    color: orange;
 }
 #menu ul li ul{
     display: none;
     background-color: #42cef5;
     position: absolute;
-    width: 100px;
+    width: 160px;
     z-index: 3;
 }
-#menu ul li ul #table1{
-    display: none;
+#menu ul li ul .table1{
     background-color: #42cef5;
-    position: absolute;
-    width: 200px;
+    left: 1%;
+    width: 900px;
     z-index: 3;
+}
+#menu ul .table1 tr td a{
+    color: white;
+    font-weight: 100;
+}
+#menu ul .table1 tr th a{
+    color: white;
+    font-weight: 12000;
 }
 #menu ul li:hover ul{
     display: block;
@@ -55,17 +75,34 @@
     display: block;
     z-index: 3;
 }
-#table1 tr td{
+
+.table1 tr td{
     margin-top: 5px;
     margin-right: 10px;
     z-index: 3;
-    background-color: cyan;
+    background-color: #42cef5;
 }
-#menu ul li #table1 tr td{
+#menu ul li .table1 tr td{
     margin-right: 30px;
     z-index: 3;
 }
 #menu ul li ul br{
     background-color:black;
     z-index: 3;
+}
+#menu ul li .altsecim:hover{
+    color: white;
+    transition: 0.3s;
+}
+.tKay{
+    width: 100%;
+}
+.tableKay{
+    border-collapse: collapse;
+}
+.tableKatman{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
 }

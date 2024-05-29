@@ -1,4 +1,3 @@
-/* Eski Projeden alınan kod parçası "okul kişisel web sayfası/submob.HTML" */
 const wrapper = document.querySelector(".wrapper");
 const carousel = document.querySelector(".carousel");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
